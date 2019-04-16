@@ -1,0 +1,188 @@
+
+.classUL {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;  
+  }
+  span {
+      color: black;
+  }
+  .classLI {
+    float:left ;
+    display: block;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    font-size: xx-large;
+    font-weight: bold;
+    color: white;
+  }
+  #rightLi {
+    float: right;
+    text-decoration-line: underline; 
+  }
+    #header {
+        background-color: green;
+        height: 65px;
+        width: 100%;
+        border-top: 0px;
+        border-right: 0px;
+        
+    }
+    #water {
+        background-color: black;
+        height: 260px; 
+        width: 100%;
+    }
+    #median {
+        background-color: gray;
+        height: 65px;
+        width: 100%;
+    }
+    #road {
+        background-color: black;
+        height: 260px;
+        width: 100%;
+    }
+    #footer {
+        background-color: green;
+        height: 65px;
+        width: 100%;
+    }
+    #start1 {
+        background-color: gold;
+        height: 100%;
+        width: 99%;
+        font-size:  1.8em;
+        text-align: center;
+        border-radius: 5px;
+        position: absolute;
+    }
+    #chicken{ 
+        height: 65px;
+        width: 70px;
+        position: absolute;
+        top: 660px;
+        left: 735px;
+        visibility: hidden;
+        
+    }
+    #startPageChicken {
+        height: 425px;
+        width: 450px;
+    }
+    #car1{
+        height: 65px;
+        width: 260px; 
+        position: absolute;
+        top: 400px;
+        left:-270px;  
+    }
+    
+    #car2{
+        height: 65px;
+        width: 260px;
+        position: absolute;
+        top: 465px;
+        left:-270px;
+    }
+     
+    #car3{
+        height: 65px;
+        width: 260px;
+        position: absolute;
+        top: 530px;
+        left: -270px;
+    }
+     
+    #car4{
+        height: 65px;
+        width: 195px;
+        position: absolute;
+        top: 595px;
+        left: -270px;
+    }
+     #car5{
+        height: 65px;
+        width: 160px;
+        position: absolute;
+        top: 595px;
+        left:-270px;
+    }
+    #car6{
+        height: 65px;
+        width: 130px;
+        position: absolute;
+        top: 530px;
+        left: -270px;
+    }
+    #car7{
+        height: 65px;
+        width: 130px;
+        position: absolute;
+        top: 465px;
+        left: -270px;
+    }
+    #car8{
+        height: 65px;
+        width: 130px;
+        position: absolute;
+        top: 400px;
+        left:-270px;
+    }
+    #car9{
+        height: 65px;
+        width: 260px; 
+        position: absolute;
+        top: 140px;
+        left: 1600px;  
+    }
+    #car10{
+        height: 65px;
+        width: 260px;
+        position: absolute;
+        top: 205px;
+        left:1600px;
+    }#car11{
+        height: 65px;
+        width: 260px;
+        position: absolute;
+        top: 270px;
+        left:1600px;
+    }
+     #car12{
+        height: 65px;
+        width: 195px;
+        position: absolute;
+        top: 75px;
+        left: 1600px;
+    }
+    #car13{
+        height: 65px;
+        width: 165px;
+        position: absolute;
+        top: 140px;
+        left: 1600px;
+    }
+     #car14{
+        height: 65px;
+        width: 130px;
+        position: absolute;
+        top: 205px;
+        left: 1600px;
+    }#car15{
+        height: 65px;
+        width: 130px;
+        position: absolute;
+        top: 270px;
+        left: 1600px;
+    }
+     #car16{
+        height: 65px;
+        width: 130px;
+        position: absolute;
+        top: 75px;
+        left: 1600px;
+    }
+    
