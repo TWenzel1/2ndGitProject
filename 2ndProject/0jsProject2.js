@@ -15,6 +15,17 @@ counter13 = 0;
 counter14 = 0;
 counter15 = 0;
 counter16 = 0;
+let counter = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+let car = [];
+car[0] = car1;
+car[1] = car2;
+car[2] = car3;
+car[3] = car4;
+car[4] = car5;
+car[5] = car6;
+car[6] = car7;
+car[7] = car8;
+
 var chickenPoints = 0;
 var chickenpoints = 0;
 var chickenLives = 3;
@@ -48,24 +59,28 @@ function car1start() {
     var inTimer1 = setInterval(car1f, 12);
 }
 function car1f() {
+    anyCar(0, 1, -300);
+}
 
-    counter1++;
-    var left1 = parseInt(window.getComputedStyle(car1, null).left);
-    car1.style.left = (left1 + 1) + "px";
+function anyCar(carNum, offset, offScreen) {
+    counter[carNum]++;
+    var left1 = parseInt(window.getComputedStyle(car[carNum], null).left);
+    car1.style.left = (left1 + offset) + "px";
 
     var chicken1EndTop = parseInt(window.getComputedStyle(chicken, null).top);
     var chicken1EndLeft = parseInt(window.getComputedStyle(chicken, null).left);
-    var car1EndTop = parseInt(window.getComputedStyle(car1, null).top);
-    var car1EndLeft = parseInt(window.getComputedStyle(car1, null).left);
-    var car1Width = parseInt(window.getComputedStyle(car1, null).width);
+    var car1EndTop = parseInt(window.getComputedStyle(car[carNum], null).top);
+    var car1EndLeft = parseInt(window.getComputedStyle(car[carNum], null).left);
+    var car1Width = parseInt(window.getComputedStyle(car[carNum], null).width);
 
     if (chicken1EndTop == car1EndTop && (chicken1EndLeft + 40 > car1EndLeft && chicken1EndLeft < car1EndLeft + car1Width))
         endChicken();
 
-    if (counter1 > 1950) {
-        car1.style.left = "-300px";
-        counter1 = 0;
+    if (counter[carNum] > 1950) {
+        car[carNum].style.left = offScreen + "px";
+        counter[carNum] = 0;
     }
+
 }
 
 function car2start() {
@@ -78,8 +93,8 @@ function car2f() {
     car2.style.left = (left2 + 1) + "px";
 
     var chicken2EndTop = parseInt(window.getComputedStyle(chicken, null).top);
-    var car2EndTop = parseInt(window.getComputedStyle(car2, null).top);
     var chicken2EndLeft = parseInt(window.getComputedStyle(chicken, null).left);
+    var car2EndTop = parseInt(window.getComputedStyle(car2, null).top);
     var car2EndLeft = parseInt(window.getComputedStyle(car2, null).left);
     var car2Width = parseInt(window.getComputedStyle(car2, null).width);
 
